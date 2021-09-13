@@ -29,6 +29,7 @@ namespace WinFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Window1));
             this.button1 = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,8 +40,9 @@ namespace WinFormsApp1
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(218, 343);
+            this.button1.Location = new System.Drawing.Point(200, 345);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 56);
             this.button1.TabIndex = 0;
@@ -53,9 +55,10 @@ namespace WinFormsApp1
             this.progressBar1.Location = new System.Drawing.Point(49, 269);
             this.progressBar1.Maximum = 125;
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(688, 43);
+            this.progressBar1.Size = new System.Drawing.Size(688, 27);
             this.progressBar1.Step = 1;
             this.progressBar1.TabIndex = 1;
+            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // label2
             // 
@@ -63,9 +66,8 @@ namespace WinFormsApp1
             this.label2.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(1, 125);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(796, 65);
+            this.label2.Size = new System.Drawing.Size(800, 65);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Выкачанно 0 руб. из 70050505 руб.";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
@@ -75,16 +77,15 @@ namespace WinFormsApp1
             this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(1, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(796, 70);
+            this.label1.Size = new System.Drawing.Size(800, 70);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Казино взломано на 100%";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(445, 343);
+            this.button2.Location = new System.Drawing.Point(500, 345);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(104, 56);
             this.button2.TabIndex = 4;
@@ -98,7 +99,7 @@ namespace WinFormsApp1
             this.label3.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(1, 190);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(796, 65);
+            this.label3.Size = new System.Drawing.Size(800, 65);
             this.label3.TabIndex = 5;
             this.label3.Text = "Продолжить?";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -107,17 +108,18 @@ namespace WinFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(804, 451);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Window1";
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Взлом КАЗИНО";
             this.ResumeLayout(false);
 
