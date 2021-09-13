@@ -40,11 +40,12 @@ namespace WinFormsApp1
             // 
             // button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(200, 345);
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(200, 200);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 56);
+            this.button1.Size = new System.Drawing.Size(110, 50);
             this.button1.TabIndex = 0;
             this.button1.Text = "Да";
             this.button1.UseVisualStyleBackColor = true;
@@ -52,11 +53,12 @@ namespace WinFormsApp1
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(49, 269);
+            this.progressBar1.Location = new System.Drawing.Point(51, 164);
             this.progressBar1.Maximum = 125;
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(688, 27);
             this.progressBar1.Step = 1;
+            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 1;
             this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
@@ -64,10 +66,11 @@ namespace WinFormsApp1
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(1, 125);
+            this.label2.Location = new System.Drawing.Point(3, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(800, 65);
+            this.label2.Size = new System.Drawing.Size(779, 42);
             this.label2.TabIndex = 3;
+            this.label2.Text = "Выкачанно 10000 из 9389412428";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
@@ -75,19 +78,21 @@ namespace WinFormsApp1
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(1, 55);
+            this.label1.Location = new System.Drawing.Point(3, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(800, 70);
+            this.label1.Size = new System.Drawing.Size(779, 43);
             this.label1.TabIndex = 2;
+            this.label1.Text = "Казино взломанно на 100";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(500, 345);
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(480, 200);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 56);
+            this.button2.Size = new System.Drawing.Size(110, 50);
             this.button2.TabIndex = 4;
             this.button2.Text = "Нет";
             this.button2.UseVisualStyleBackColor = true;
@@ -97,9 +102,9 @@ namespace WinFormsApp1
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(1, 190);
+            this.label3.Location = new System.Drawing.Point(3, 117);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(800, 65);
+            this.label3.Size = new System.Drawing.Size(779, 44);
             this.label3.TabIndex = 5;
             this.label3.Text = "Продолжить?";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -108,7 +113,8 @@ namespace WinFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 451);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(783, 260);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
