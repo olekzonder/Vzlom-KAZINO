@@ -26,7 +26,7 @@ namespace WinFormsApp1
             PlayerBondage.SoundLocation = "https://olekzonder.s-ul.eu/mrLTJy4u";
             PlayerFinished.SoundLocation = "https://olekzonder.s-ul.eu/9IGzSEaW";
             Random random = new Random();
-            FinalNumber = random.Next(5000000, 7500000);
+            FinalNumber = random.Next(50000000, 75000000);
             FinalNumber = FinalNumber - FinalNumber % 125;
             Counter = 0;
             FlagBondage = 0;
@@ -46,7 +46,7 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (progressBar1.Value < 75)
+            if (progressBar1.Value < 69)
             {
                 progressBar1.Value++;
                 CurrentPercent += Percent;
@@ -86,7 +86,7 @@ namespace WinFormsApp1
 
                 };
                 button1.Enabled = false;
-                label1.Text = "Bondage gay website взломан на " + CurrentPercent.ToString("0%") + ".";
+                label1.Text = "Казино взломано.";
                 label2.Text = "Все деньги ушли на оплату fisting.";
                 label3.Visible = false;
                 if (button2.Enabled == true) button2.Enabled=false;
